@@ -19,24 +19,20 @@
       width:min(720px,calc(100% - 30px));
       margin:auto
     }
-    header{padding:22px 0}
+    header{padding:18px 0}
     .brand{
       display:flex;
       align-items:center;
-      gap:10px;
+      gap:12px;
       color:#172033;
       font-weight:700;
       text-decoration:none
     }
-    .mark{
-      display:grid;
-      place-items:center;
-      width:38px;
-      height:38px;
-      border-radius:10px;
-      color:#fff;
-      background:#1957a6;
-      font-size:21px
+    .logo{
+      width:58px;
+      height:56px;
+      object-fit:contain;
+      border-radius:10px
     }
     main{padding:30px 0 50px}
     .card{
@@ -91,7 +87,10 @@
       color:#fff;
       background:#1957a6
     }
-    dl{margin:0;border-top:1px solid #d8e0eb}
+    dl{
+      margin:0;
+      border-top:1px solid #d8e0eb
+    }
     dl div{
       padding:18px 0;
       border-bottom:1px solid #d8e0eb
@@ -130,13 +129,14 @@
     @media(max-width:520px){
       .buttons{grid-template-columns:1fr}
       main{padding-top:12px}
+      .logo{width:52px;height:50px}
     }
   </style>
 </head>
 <body>
   <header>
     <a class="brand" href="../">
-      <span class="mark">す</span>
+      <img class="logo" src="suwaken-logo.png" alt="すわ研究所ロゴ">
       <span>すわ研究所</span>
     </a>
   </header>
