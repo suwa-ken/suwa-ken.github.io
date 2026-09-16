@@ -18,24 +18,20 @@
       width:min(900px,calc(100% - 36px));
       margin:auto
     }
-    header{padding:24px 0}
+    header{padding:20px 0}
     .brand{
       display:flex;
       align-items:center;
       gap:12px;
       font-weight:700
     }
-    .mark{
-      display:grid;
-      place-items:center;
-      width:42px;
-      height:42px;
-      border-radius:12px;
-      color:#fff;
-      background:#1957a6;
-      font-size:24px
+    .logo{
+      width:58px;
+      height:56px;
+      object-fit:contain;
+      border-radius:10px
     }
-    main{padding:70px 0 50px}
+    main{padding:65px 0 50px}
     .english{
       color:#1957a6;
       font-size:13px;
@@ -82,13 +78,14 @@
     @media(max-width:540px){
       main{padding-top:40px}
       .lost{margin-top:60px;padding:24px 20px}
+      .logo{width:52px;height:50px}
     }
   </style>
 </head>
 <body>
   <header>
     <div class="brand">
-      <span class="mark">す</span>
+      <img class="logo" src="suwaken-logo.png" alt="すわ研究所ロゴ">
       <span>すわ研究所</span>
     </div>
   </header>
